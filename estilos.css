@@ -142,58 +142,60 @@ a{
 					}
 		.video{
 			display: flex;
-			height: 800px;
-			align-items: center;
-			color:#fff;
-			flex-direction: column;
-
+			color:#000;
+			background: #fff;
 		}
 
 		
 		.video-fondo {
 			width: 100%;
-			height: 100px;
 			left: 0;
 			overflow: hidden;
+			position: relative;
+
+
 		}
 		.video-fondo video{
-			height: 800px;
 			width: 100vw;
 		}
 		.capa{
-
-			position: absolute;
-			width: 100vw;
-			background: #303952;
-			left:0;
-			opacity: .85
-
-
-		}
-		.capita{
-			display: flex;
-			justify-content: center;
-			align-items:  center;
-			flex-wrap: wrap;
-
+			width: 100%;
+    		left: 0;
+    		background: #303952;
+    		height: 40%;
+    		position: absolute;
+    		opacity: .85;
 
 		}
 		.texto-video{
-			z-index: 2;
-			flex-basis: 1000px;
-
+			position: absolute;
 		}
+
 		.texto-video h1{
 			font-family: 'Lobster', cursive;
 			font-size: 80px;
+			color:white;
+			text-align: center;
 
 
 		}
 		.texto-video p{
-			font-size: 20px;
+			font-size: 15px;
 			margin-bottom: 30px;
+			color:white;
+			letter-spacing: 1.5px;
+			text-align: center;
 
 			
+		}
+	#cita-video{
+			color: white;
+			font-size: 16px;
+			margin-left: 20px;
+			bottom:0;
+		}
+		.cita{
+			display: flex;
 		}
 		.btn{
 			background: #c44569;
@@ -202,11 +204,24 @@ a{
 			padding: 1rem 2rem;
 			text-decoration: none;
 		}
+		.btn-video{
+			display: flex;
+			justify-content: space-around;
 
+		}
 		.aside{
 			background: #3a0088;
+			display: flex;
 
 
+		}
+		.paypal img:hover{
+			transition: transform 1s;
+			transform: rotate(360deg);
+		}
+		.paypal img:before{
+			transition: transform 1s;
+			transform: scale(.1);
 		}
 			.publicidad{
 				background: #a44444;
@@ -218,6 +233,94 @@ a{
 			background: #23a393;
 
 		}
+	/*---------------LOGIN-------------*/
+body {
+  margin: 0;
+  padding: 0;
+  background: url(bg.jpeg) no-repeat center top;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.login-box {
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.login-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.login-box a:hover {
+  color: #fff;
+}
+	
 @media all and (max-width: 900px){
 	.section{
 		flex-direction: column;
@@ -258,3 +361,17 @@ a{
 		flex-direction: column;
 	}
 }
+/*@keyframes paypal{
+	0%{
+		opacity: 1;
+		transform: scale(.1) rotate(0deg);
+	}
+	50%{	
+		opacity: 1;
+		transform: scale(1) rotate(360deg);
+	}
+	100%{
+		transform: scale(1) rotate(360deg);
+	}
+
+}*/
