@@ -1,0 +1,171 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.padre{
+	display:flex;
+	flex-flow: column nowrap;
+}
+.margen-interno{
+	padding: 0px 50px;
+}
+
+	.header{
+		background: url('img/fondo2.jpg');
+		background-position: center;
+		background-attachment: contain;
+		background-size: cover;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+		.menu{
+			background: rgb(0,0,0,.1);
+			display:flex;
+			flex-flow: row nowrap;
+			height: 70px;
+			align-items: center;
+			border-bottom: 1px solid rgba(255,255,255,.5)
+		}
+			.logo{
+				flex:1 1 auto;
+				height: 30px;
+			}
+				.logo a {
+					color:#fff;
+					font-size: 30px;
+					
+				}
+				.logo a:hover{
+					color:#343434;
+				}
+			.nav{
+				flex:5 1 auto;
+				height: 30px;
+			}
+				.nav a{
+					color:#fff;
+					font-size: 12px;
+					text-transform: uppercase;
+					padding: 0 10px;
+					letter-spacing: 2px;
+				}
+				.nav a:hover{
+					color:#343434;
+				}
+			.social{
+				display: flex;
+				flex:1 1 auto;
+				height: 30px;
+				align-items: center;
+			}
+				.social a{
+					font-size: 16px;
+					color:#fff;
+					padding: 0 5px;
+				}
+				.social a:hover{
+					color:#343434;
+				}
+		.texto-principal{
+			/*background: #ef6c57;*/
+			height: 500px;
+			display: flex;
+			align-items: center;
+		}
+			h1{
+				font-size: 11px;
+				color: #fff;
+				letter-spacing: 2px;
+				
+			}
+	.section{
+		background: #f7f7f7;
+		display: flex;
+		flex-direction: column;
+	}
+
+	
+		.articulos{
+				background: #e61c5d;
+				display: flex;
+				justify-content: space-around;
+
+		}
+			.servicios{
+				background: rgba(0,0,0,.1);
+				}			
+				.article{
+					background: #f16821;
+					display: flex;
+				}
+					.img img{
+						width: 100px;
+					}
+					#info{
+						order:-1;
+					}
+					.info{
+						display:flex;
+					}
+
+
+		.aside{
+			background: #3a0088;
+
+
+		}
+			.publicidad{
+				background: #a44444;
+			}
+	.footer{
+		background: #000;
+	}
+		.pie{
+			background: #23a393;
+
+		}
+/*@media all and (max-width: 900px){
+	.section{
+		flex-direction: column;
+	}
+	.menu{
+		flex-direction: column;
+		height: auto;
+	}
+	.aside {
+		display: flex;
+		justify-content: center;
+	}
+	h1{
+		font-size: 15px;
+	}
+	.texto-principal{
+		height: 400px;
+	}
+}
+@media all and (max-width: 780px){
+	.articulos{
+		flex-direction: column;
+	}
+}
+@media all and (max-width: 550px){
+	.off{
+		display: none;
+	}
+	.nav a{
+		font-size: 20px;
+	}
+}
+@media all and (max-width: 400px){
+	.aside{
+		flex-direction: column;
+	}
+}*/
