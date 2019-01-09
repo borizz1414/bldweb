@@ -94,6 +94,9 @@ a{
 	.texto-servicios{
 		margin:25px 0 10px 0;
 		font-size: 35px;
+		font-family: 'Coiny', cursive;
+		font-family: 'Staatliches', cursive;
+		letter-spacing: 1.5px;
 	}
 
 	
@@ -210,10 +213,13 @@ a{
 
 		}
 		.aside{
-			background: #3a0088;
+			background: #f7f7f7;
 			display: flex;
 
+		}
 
+		.paypal img, .bs img, .neteller img{
+			width: 200px;
 		}
 		.paypal img:hover{
 			transition: transform 1s;
