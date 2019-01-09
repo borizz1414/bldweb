@@ -80,7 +80,7 @@ a{
 			display: flex;
 			align-items: center;
 		}
-			h1{
+			#texto-principal{
 				font-size: 11px;
 				color: #fff;
 				letter-spacing: 2px;
@@ -140,7 +140,68 @@ a{
 					#app{
 						color: black;
 					}
+		.video{
+			display: flex;
+			height: 800px;
+			align-items: center;
+			color:#fff;
+			flex-direction: column;
 
+		}
+
+		
+		.video-fondo {
+			width: 100%;
+			height: 100px;
+			left: 0;
+			overflow: hidden;
+		}
+		.video-fondo video{
+			height: 800px;
+			width: 100vw;
+		}
+		.capa{
+
+			position: absolute;
+			width: 100vw;
+			background: #303952;
+			left:0;
+			opacity: .85
+
+
+		}
+		.capita{
+			display: flex;
+			justify-content: center;
+			align-items:  center;
+			flex-wrap: wrap;
+
+
+		}
+		.texto-video{
+			z-index: 2;
+			flex-basis: 1000px;
+
+		}
+		.texto-video h1{
+			font-family: 'Lobster', cursive;
+			font-size: 80px;
+
+
+		}
+		.texto-video p{
+			font-size: 20px;
+			margin-bottom: 30px;
+
+			
+		}
+		.btn{
+			background: #c44569;
+			color:#fff;
+			font-size: 16px;
+			padding: 1rem 2rem;
+			text-decoration: none;
+		}
 
 		.aside{
 			background: #3a0088;
@@ -196,4 +257,4 @@ a{
 	.aside{
 		flex-direction: column;
 	}
-}*/
+}
