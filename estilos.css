@@ -206,6 +206,10 @@ a{
 			font-size: 16px;
 			padding: 1rem 2rem;
 			text-decoration: none;
+			margin: 20px 20px;
+		}
+		.btn:hover{
+			background: #e61c5d;
 		}
 		.btn-video{
 			display: flex;
@@ -352,6 +356,12 @@ body {
 	}
 	#off{
 		display: none;
+	}
+	.capa{
+		height: 30%;
+	}
+	.texto-video p{
+		font-size: 12px;
 	}
 }
 @media all and (max-width: 550px){
