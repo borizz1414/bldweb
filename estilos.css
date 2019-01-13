@@ -496,15 +496,44 @@ figure .trasera p {
 	.texto-video p{
 		font-size: 12px;
 	}
-	#titulo-tec h1{
-		font-size: 10px;
-	}
-	#icon-wp,#icon-html,#icon-css,#icon-js,#icon-dp,#icon-bd,#icon-php{
-		font-size: 10px;
-	}
 	.btn{
 		font-size: 14px;
 		padding: 0.5rem 1rem;
+	}
+	.progres-bar{
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media all and (max-width: 960px){
+	
+	#icon-wp,#icon-html,#icon-css,#icon-js,#icon-dp,#icon-bd,#icon-php{
+		font-size: 40px;
+	}
+	.texto-video h1{
+		font-size: 40px;
+	}
+	#titulo-tec h1{
+		font-size: 50px;
+	}
+}
+@media all and (max-width: 886px){
+	.offf{
+		display: none;
+	}
+	.progres-bar{
+		display: flex;
+		flex-direction: column;
+	}
+	.tecnologias{
+		display: flex;
+
+	}
+	#titulo-tec h1{
+		font-size: 50px;
+	}
+	.off{
+		display: none;
 	}
 }
 @media all and (max-width: 550px){
