@@ -38,10 +38,7 @@ a{
 			.logo{
 				flex:1 1 auto;
 				height: 30px;
-				font-family: 'Charm', cursive;
-				font-family: 'Raleway', sans-serif;
-				font-family: 'Righteous', cursive;
-				font-family: 'Aclonica', sans-serif;
+				font-family: 'Lobster', cursive;
 			}
 				.logo a {
 					color:#fff;
@@ -179,19 +176,13 @@ a{
 
 			display: flex;
 			justify-content: space-around;
+			flex-wrap: wrap;
 		}
-		.barras h2{
+		.tecnologias h2{
 			text-align: center;
-			background:rgba(255,255,255,.85);
 			width: 300px;
 		}
-		.barra{
-			width: 400px;
-			background: #393e46;
-			border:1px solid rgba(255,255,255,.5);
-
-		}
-		#titulo-barra h1{			
+		#titulo-tec h1{			
 			font-family: 'Faster One', cursive;
 			font-family: 'Fugaz One', cursive;
 			font-family: 'Ultra', serif;
@@ -201,14 +192,37 @@ a{
 			font-size: 65px;
 			letter-spacing: 2px;
 		}
-		.barras i{
+		.tecnologias i{
 			color: white;
-			font-size: 80px;
+			font-size: 65px;
 			margin-top: 20px;
 		}
-		.icons-barra{
+		#tipo-tec{
+			font-size: 12px;
+		}
+		.icons-tec{
 			display: flex;
 			justify-content: space-around;
+		}
+		#icon-html{
+			color: #F86F26;
+		}
+		#icon-css{
+			color: #35ACF5;
+		}
+		#icon-js{
+			color: #FAE233;
+		}
+		#icon-php{
+			color: #B498EF;
+		}
+		#icon-bd{
+			color: #97BF91;
+		}
+		#icon-wp{
+			color: #fff;
+		}#icon-dp{
+			color: #0D45BF;
 		}
 		.texto-video h1{
 			font-family: 'Lobster', cursive;
@@ -363,14 +377,14 @@ figure .trasera p {
 
 }
 	/*---------------LOGIN-------------*/
-body {
+/*body {
   margin: 0;
   padding: 0;
   background: url(bg.jpeg) no-repeat center top;
   background-size: cover;
   font-family: sans-serif;
   height: 100vh;
-}
+}*/
 
 .login-box {
   width: 320px;
@@ -477,10 +491,20 @@ body {
 		display: none;
 	}
 	.capa{
-		height: 30%;
+		height: 50%;
 	}
 	.texto-video p{
 		font-size: 12px;
+	}
+	#titulo-tec h1{
+		font-size: 10px;
+	}
+	#icon-wp,#icon-html,#icon-css,#icon-js,#icon-dp,#icon-bd,#icon-php{
+		font-size: 10px;
+	}
+	.btn{
+		font-size: 14px;
+		padding: 0.5rem 1rem;
 	}
 }
 @media all and (max-width: 550px){
