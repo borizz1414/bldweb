@@ -240,11 +240,35 @@ a{
 
 		}
 	.footer{
-		background: #000;
-	}
-		.pie{
-			background: #23a393;
+		background: #233142;
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
 
+	}
+		.pie a,.redes-footer i, .text-footer p{
+			color:white;			
+
+		}
+		.redes-footer i{
+			font-size: 30px;
+			letter-spacing: 20px;
+			margin-bottom: 15px;
+
+
+		}
+		.text-footer p{
+			margin-top: 20px;
+			font-size: 18px;
+		}
+		.correo-footer input[type="text"]{
+			width: 400px;
+			height: 50px;
+			border:1px solid white;
+			margin-bottom: 20px;
+			margin-top: 10px;
 		}
 	/*----TARJETAS 3D-------*/
 	.contenedor {
