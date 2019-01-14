@@ -14,6 +14,7 @@ a{
 .padre{
 	display:flex;
 	flex-flow: column nowrap;
+	background: #f7f7f7;
 }
 .margen-interno{
 	padding: 0px 50px;
@@ -109,11 +110,16 @@ a{
 				margin-top: 50px;
 
 
-		}	
+		}
+
 				.article{
 					background: #f7f7f7;
 					display: flex;
 
+				}
+				#article:hover, .proceso-items:hover{
+					transform: scale(1.1);
+					transition: transform 0.3s;
 				}
 					#article{
 						margin: 15px 0 15px 0; 
@@ -127,8 +133,9 @@ a{
 					}
 					.img i{
 						color:white;
-						font-size: 45px;
+						font-size: 50px;
 						padding: 25px;
+						width: 110px;
 
 					}
 					#info{
@@ -232,6 +239,36 @@ a{
 		}
 		.proyectos{
 			background: #f7f7f7;
+			display: flex;
+			justify-content: center;
+		}
+		.text-project{
+			display: flex;
+   			flex-direction: column;
+    		align-items: center;
+		}
+		.proceso-container{
+			display: flex;
+			margin-top: 20px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.proceso-items{
+			width: 600px;
+			padding: 20px 20px;
+			text-align: justify;
+			
+		}
+		.proceso-items i{
+			font-size: 40px;
+			color:#f95959;
+			margin-bottom: 10px;
+		}
+		.proceso-items p{
+				color:rgba(0,0,0,.6);
+				border-bottom: 1px solid rgba(0,0,0,.7);
+				border-top: 1px solid rgba(0,0,0,.8);
+				
 		}
 		.aside{
 			background: #f7f7f7;
