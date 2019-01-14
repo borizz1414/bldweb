@@ -167,42 +167,15 @@ a{
 			width: 100%;
     		left: 0;
     		background: #303952;
-    		height: 70%;
     		position: absolute;
     		opacity: .85;
+    		min-height: 100px;
 
 		}
-		.progres-bar{
-
-			display: flex;
-			justify-content: space-around;
-			flex-wrap: wrap;
-		}
-		.tecnologias h2{
-			text-align: center;
-			width: 300px;
-		}
-		#titulo-tec h1{			
-			font-family: 'Faster One', cursive;
-			font-family: 'Fugaz One', cursive;
-			font-family: 'Ultra', serif;
-			font-family: 'Bangers', cursive;
-			color:black;
-			opacity: .85;
-			font-size: 65px;
-			letter-spacing: 2px;
-		}
-		.tecnologias i{
-			color: white;
-			font-size: 65px;
-			margin-top: 20px;
-		}
-		#tipo-tec{
-			font-size: 12px;
-		}
-		.icons-tec{
-			display: flex;
-			justify-content: space-around;
+		.text-capa i{
+			font-size: 25px;
+			letter-spacing: 10px;
+			margin-top: 10px;
 		}
 		#icon-html{
 			color: #F86F26;
@@ -256,6 +229,9 @@ a{
 			display: flex;
 			justify-content: space-around;
 
+		}
+		.proyectos{
+			background: #f7f7f7;
 		}
 		.aside{
 			background: #f7f7f7;
@@ -366,9 +342,8 @@ figure .trasera p {
 
 @media screen and (max-width: 992px) { 
 	figure .trasera {
-		/*position: relative;*/
 		backface-visibility:visible;
-		transform: perspective(600px) rotateY(0deg);
+		overflow: hidden;
 	}
 
 	.contenedor_tarjeta:hover figure {
@@ -482,64 +457,37 @@ figure .trasera p {
 	.texto-principal{
 		height: 400px;
 	}
-}
-@media all and (max-width: 780px){
 	.articulos{
 		flex-direction: column;
 	}
 	#off{
 		display: none;
 	}
-	.capa{
-		height: 50%;
-	}
+}
+@media all and (max-width: 780px){
 	.texto-video p{
-		font-size: 12px;
+		font-size: 10px;
+		margin-bottom: 0px;
 	}
 	.btn{
 		font-size: 14px;
 		padding: 0.5rem 1rem;
+		margin:0px 0px;
 	}
-	.progres-bar{
-		display: flex;
-		flex-direction: column;
+}
+@media all and (max-width: 341px){
+	.texto-video p{
+		font-size: 10px;
 	}
 }
 @media all and (max-width: 960px){
-	
-	#icon-wp,#icon-html,#icon-css,#icon-js,#icon-dp,#icon-bd,#icon-php{
-		font-size: 40px;
-	}
+
 	.texto-video h1{
 		font-size: 40px;
 	}
-	#titulo-tec h1{
-		font-size: 50px;
-	}
-}
-@media all and (max-width: 886px){
-	.offf{
-		display: none;
-	}
-	.progres-bar{
-		display: flex;
-		flex-direction: column;
-	}
-	.tecnologias{
-		display: flex;
-
-	}
-	#titulo-tec h1{
-		font-size: 50px;
-	}
-	.off{
-		display: none;
-	}
 }
 @media all and (max-width: 550px){
-	.off{
-		display: none;
-	}
+
 	.nav a{
 		font-size: 20px;
 	}
@@ -549,6 +497,7 @@ figure .trasera p {
 		flex-direction: column;
 	}
 }
+
 /*@keyframes paypal{
 	0%{
 		opacity: 1;
