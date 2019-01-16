@@ -157,8 +157,6 @@ a{
 			color:#000;
 			background: #fff;
 		}
-
-		
 		.video-fondo {
 			width: 100%;
 			left: 0;
@@ -180,9 +178,23 @@ a{
 
 		}
 		.text-capa i{
-			font-size: 25px;
+			font-size: 40px;
 			letter-spacing: 10px;
 			margin-top: 10px;
+		}
+		#pd_capa{
+			font-size: 10px;
+			letter-spacing: 1px;
+			color: #facf5a;
+			text-align: justify;
+
+		}
+		.pd-capa{
+			display: flex;
+			justify-content: center;
+		}
+		.text-pd{
+			width: 300px;
 		}
 		#icon-html{
 			color: #F86F26;
@@ -213,13 +225,20 @@ a{
 
 		}
 		.texto-video p{
-			font-size: 15px;
+			font-size: 16px;
 			margin-bottom: 30px;
 			color:white;
-			letter-spacing: 1.5px;
+			letter-spacing: 1.2px;
 			text-align: center;
+			margin-right: 10px;
+			margin-left: 10px;
+
 
 			
+		}
+		.correo-video{
+			display: flex;
+			justify-content: center;
 		}
 		.btn{
 			background: #c44569;
@@ -285,9 +304,13 @@ a{
 		justify-content: space-around;
 
 	}
-		.pie a,.redes-footer i, .text-footer p{
+		.redes-footer i, .text-footer p{
 			color:white;			
 
+		}
+		.pie p{
+			color:white;
+			margin-top: 5px;
 		}
 		.redes-footer i{
 			font-size: 20px;
@@ -298,10 +321,14 @@ a{
 
 		}
 		.text-footer p{
-			margin-top: 20px;
+			margin-top: 15px;
 			font-size: 18px;
+			margin-bottom: 15px;
 		}
-		.correo-footer input[type="text"]{
+		.correo-footer form{
+			margin-bottom: 10px;
+		}
+		.correo-footer input[type="text"], .correo-video input[type="text"]{
 			width: 400px;
 			height: 50px;
 			border:1px solid white;
@@ -531,6 +558,21 @@ figure .trasera p {
 		font-size: 10px;
 		margin-bottom: 0px;
 	}
+	.correo-footer input[type="text"], .correo-video input[type="text"]{
+			width: 200px;
+			height: 33px;
+			border:1px solid white;
+			margin-bottom: 0px;
+			margin-top: 0px;
+		}
+	.texto-video p{
+		margin-bottom: 0px;
+	}
+	.text-capa i {
+    	font-size: 25px;
+    	letter-spacing: 5px;
+    	margin-top: 5px;
+    }
 	.btn{
 		font-size: 14px;
 		padding: 0.5rem 1rem;
@@ -555,6 +597,19 @@ figure .trasera p {
 	}
 }
 @media all and (max-width: 400px){
+	.aside{
+		flex-direction: column;
+	}
+
+	.texto-video h1 {
+    font-size: 25px;
+}
+@media all and (max-width: 330px){
+	
+	.texto-video h1 {
+    font-size: 20px;
+}
+@media all and (max-height: 736px){
 	.aside{
 		flex-direction: column;
 	}
