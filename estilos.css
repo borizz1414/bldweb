@@ -28,26 +28,34 @@ a{
 		display: flex;
 		flex-flow: column nowrap;
 	}
-		.menu{
+		/*.menu{
 			background: rgb(0,0,0,.3);
 			display:flex;
 			flex-flow: row nowrap;
 			height: 70px;
 			align-items: center;
 			border-bottom: 1px solid rgba(255,255,255,.5)
-		}
+		}*/
 			.logo{
 				flex:1 1 auto;
-				height: 30px;
-				font-family: 'Lobster', cursive;
+				/*font-family: 'Lobster', cursive;*/
+
+
 			}
-				.logo a {
-					color:#fff;
-					font-size: 30px;
+				.logo h1 {
+					color:white;
+					font-size: 60px;
+					background: #f95959;
+					opacity: .7;
 					
+
+
 				}
-				.logo a:hover{
-					color:#343434;
+				#design{
+					color:white;
+					font-size: 55px;
+					
+					
 				}
 			.nav{
 				flex:5 1 auto;
@@ -65,9 +73,18 @@ a{
 				}
 			.social{
 				display: flex;
-				flex:1 1 auto;
-				height: 30px;
-				align-items: center;
+				justify-content: flex-end;
+				
+    			
+			}
+			.redes_sociales{
+				background: rgba(0,0,0,.5);
+    			border-bottom: 1px solid white;
+    			border-radius: 5px;
+    			width: 350px;
+    			margin-top: 5px;
+    			color: white;
+
 			}
 				.social a{
 					font-size: 16px;
@@ -106,16 +123,20 @@ a{
 		.articulos{
 				background: #f7f7f7;
 				display: flex;
-				justify-content: space-around;
+				flex-grow: 1;
 				margin-top: 50px;
 
 
 		}
-
 				.article{
 					background: #f7f7f7;
 					display: flex;
+					
 
+				}
+				#icon-grav{
+					color:black;
+					font-size: 40px;
 				}
 				#article:hover, .proceso-items:hover{
 					transform: scale(1.1);
@@ -133,10 +154,9 @@ a{
 					}
 					.img i{
 						color:white;
-						font-size: 50px;
-						padding: 25px;
-						width: 110px;
-
+						font-size: 40px;
+   						padding: 20px;
+   						width: 80px;
 					}
 					#info{
 						order:-1;
@@ -156,6 +176,8 @@ a{
 			display: flex;
 			color:#000;
 			background: #fff;
+		}.servicios{
+			    flex-basis: 75%;
 		}
 		.video-fondo {
 			width: 100%;
@@ -181,21 +203,13 @@ a{
 			font-size: 40px;
 			letter-spacing: 10px;
 			margin-top: 10px;
+			color: white;
 		}
-		#pd_capa{
-			font-size: 10px;
-			letter-spacing: 1px;
-			color: #facf5a;
-			text-align: justify;
-
+		.text-capa{
+			color: white;
+			text-align: center;
 		}
-		.pd-capa{
-			display: flex;
-			justify-content: center;
-		}
-		.text-pd{
-			width: 300px;
-		}
+		
 		#icon-html{
 			color: #F86F26;
 		}
@@ -216,6 +230,17 @@ a{
 		}#icon-dp{
 			color: #0D45BF;
 		}
+		#icon-fb{
+			color:#0b409c;
+			font-size: 26px;
+		}
+		#icon-twitter{
+			color:#26baee;
+			font-size: 26px;
+		}
+		#icon-ig{
+				font-size: 26px;
+		}
 		.texto-video h1{
 			font-family: 'Lobster', cursive;
 			font-size: 80px;
@@ -228,13 +253,9 @@ a{
 			font-size: 16px;
 			margin-bottom: 30px;
 			color:white;
-			letter-spacing: 1.2px;
 			text-align: center;
 			margin-right: 10px;
-			margin-left: 10px;
-
-
-			
+			margin-left: 10px;		
 		}
 		.correo-video{
 			display: flex;
@@ -256,6 +277,9 @@ a{
 			justify-content: space-around;
 
 		}
+		.info h1{
+			margin-bottom: 5px;
+		}
 		.proyectos{
 			background: #f7f7f7;
 			display: flex;
@@ -265,6 +289,7 @@ a{
 			display: flex;
    			flex-direction: column;
     		align-items: center;
+    		text-align: center;
 		}
 		.proceso-container{
 			display: flex;
@@ -308,9 +333,9 @@ a{
 			color:white;			
 
 		}
-		.pie p{
+		.pie {
 			color:white;
-			margin-top: 5px;
+			
 		}
 		.redes-footer i{
 			font-size: 20px;

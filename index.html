@@ -2,24 +2,30 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Flexbox practica</title>
+	<title>BLD - Web</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	
+	<!--FONT AWESOME-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!--GOOGLE FONTS-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Coiny|Staatliches" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Charm|Raleway|Righteous" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Bangers|Faster+One|Fugaz+One|Ultra" rel="stylesheet">
-	<link rel="icon"  href="logo.ico">
+	<!--ICO-->
+	<link rel="icon"  href="B.ico">
+	<!--ANIMATE.CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 
 	<link rel="stylesheet"  href="estilos.css">
 </head>
 <body>
+	<!--CLASE CONTAINER-->
 	<div class="padre">
 		<header class="header ">
 			<div class="menu margen-interno">
+				<!---MENU DE NAVEGACION
 				<div class="logo">
 					<a href="index.html">Boris López</a>
 				</div>
@@ -28,96 +34,99 @@
 					<a href=""><i class="fas fa-user"></i><span class="off">Nosotros</span></a>
 					<a href=""><i class="fas fa-exclamation-circle"></i><span class="off">Noticias</span></a>
 					<a href=""><i class="fas fa-comment"></i><span class="off">Contacto</span></a>
-				</div>
+				</div>-->
+				<!--REDES SOCIALES PORTADA-->
 				<div class="social">
-					<div>
-						<a href=""><i class="fab fa-facebook-square"></i></a>
-						<a href=""><i class="fab fa-twitter"></i></a>
-						<a href=""><i class="fab fa-instagram"></i></a>
+					<div class="redes_sociales">
+						<a href=""><i id="icon-fb" class="fab fa-facebook-square"></i></a>
+						<a href=""><i id ="icon-twitter" class="fab fa-twitter"></i></a>
+						<a href=""><i id="icon-ig" class="fab fa-instagram"></i></a>
+						by: lopez98boris@gmail.com
 					</div>
 				</div>
 			</div>
-			<div class="texto-principal margen-interno">
-				<h1 id="texto-principal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+			<!---TEXTO PRINCIPAL PORTADA-->
+			<div class="animated bounceInLeft delay-1s texto-principal margen-interno logo">
+				<h1>B<i class="fab fa-grav" id="icon-grav"></i>ris López <span id="design">DESIGN</span></h1>
+
 			</div>
 		</header>
+		<!--SECCIÓN DE SERVICIOS-->
 		<section class="section margen-interno">
-			<center><h1 class="texto-servicios" style="color:black;">¿Porque somos tu mejor elección?</h1> Desarrollo web y Apps para empresas y profesionales.</center>
+			<center><h1 class="texto-servicios" style="color:black;">¿Porque deberias de contáctarme?</h1> Desarrollo web y Apps para empresas y profesionales.</center>
 			<div class="articulos">
 				<div class="servicios">
-					<article id="article" class="article">
-						<div class="info">
-						<h1 id="app">Aplicaciones para la nube</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+					<article id="article" class="article animated bounceInLeft delay-2s">
+						<div id="order-info" class="info">
+						<h1 id="app">Diseño Web</h1>
+						<p>Atractivo y totalmente personalizado, será responsive, accesible y funcional.</p>
 						</div>
+						
+
 						<div class="img">
-							<i class="fas fa-cloud-upload-alt"></i>
+							<i class="fas fa-laptop-code"></i>
 						</div>
 					</article>
-					<article id="article" class="article">
-						<div class="info">
-						<h1 id="app">Aplicaciones para la nube</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+					<article id="article" class="article animated bounceInLeft delay-3s">
+						<div id="order-info" class="info">
+						<h1 id="app">Autogestionables</h1>
+						<p>Tú mismo te encargarás de gestionar y administrar tu web y así mantenerla actualizada.</p>
 						</div>
 						<div class="img">
-							<i class="fas fa-desktop" style="font-size: 50px;"></i>
+							<i class="fas fa-cog"></i>
 						</div>
 					</article>
-				<article  id="article" class="article">
-						<div class="info">
-						<h1 id="app">Aplicaciones para la nube</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+				<article  id="article" class="article animated bounceInLeft delay-4s">
+						<div id="order-info" class="info">
+						<h1 id="app">Dominios y Hosting</h1>
+						<p>Contratación de dominios y alojamientos de servidores - Monitoreo - Backups.</p>
 						</div>
 						<div class="img">
-							<i class="fas fa-code"></i>
+							<i class="fas fa-server"></i>
 						</div>
 					</article>
 				</div>
-				<div  id="servicios" class="servicios">
+				<div  id="servicios" class="servicios animated bounceInUp delay-2s">
 					<article>
 						<img class="off" id="off" src="desarrollo_web.png">
 						
 					</article>
 				</div>
 				<div class="servicios">
-					<article id="article" class="article">
+					<article id="article" class="article animated bounceInRight delay-2s">
 						<div id="info" class="img">
-							<i class="fas fa-gamepad"></i>
+							<i class="fas fa-hand-holding-usd"></i>
 						</div>
 						<div  class="info">
-						<h1 id="app">Aplicaciones para la nube</h1>
-						<p id="serv">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						<h1 id="app">Haz crecer tu negocio</h1>
+						<p id="serv">Podrás describir servicios y/o productos y facilitar el contacto e interés de nuevos clientes.</p>
 						</div>
 						
 					</article>
-					<article id="article" class="article">
+					<article id="article" class="article animated bounceInRight delay-3s">
 						<div id="info" class="img">
-							<i class="fab fa-android"></i>
+							<i class="fas fa-user-check"></i>
 						</div>
 						<div  class="info">
-						<h1 id="app">Aplicaciones para la nube</h1>
-						<p id="serv">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						<h1 id="app">Me apasiona lo que hago</h1>
+						<p id="serv">A diario paso horas en la pc, me propongo metas mediante proyectos para aprender nuevas tecnologias.</i></p>
 						</div>
 						
 					</article>
-				<article id="article" class="article">
+				<article id="article" class="article animated bounceInRight delay-4s">
 						<div id="info" class="img">
-							<i class="fas fa-server" style="font-size: 59px;"></i>
+							<i class="fas fa-database"></i>
 						</div>
 						<div id="info" class="info">
-						<h1 id="app">Aplicaciones para la nube</h1>
-						<p id="serv">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						<h1 id="app">Sistemas de Bases de Datos</h1>
+						<p id="serv">Utilizo Mysql como gestor de base de datos.</p>
 						</div>
 						
 					</article>
 				</div>
 
 		</section>
+		<!--VIDEO-->
 		<div class="video off">
 				<div class="video-fondo ">
 					<video src="video.mp4" autoplay loop>
@@ -127,7 +136,7 @@
 					<div class="texto-video">
 							<h1>Sobre mi</h1>
 						<div class="text-capa">
-							<p class="off">Hola <strong>soy Boris López, </strong>soy estudiante de segundo año de Ingenieria Informática, desarrollé esta web desde 0 con <strong>HTML5 - CSS3 Flexbox Responsive</strong>, es uno de mis tantos proyectos que tenia planeado y aqui te lo muestro.Observalo y si te gusta lo que hago no dudes es dejarme tu correo y te contactare lo más breve posible.</p><br>
+							<p>Hola <strong>soy Boris López, </strong>soy estudiante de segundo año de Ingenieria Informática, desarrollé esta web desde 0 con <strong>HTML5 - CSS3 Flexbox Responsive</strong>, es uno de mis tantos proyectos que tenia planeado y aqui te lo muestro.Observalo y si te gusta lo que hago no dudes es dejarme tu correo y te contactare lo más breve posible.</p><br>
 						</div>
 					<div class="correo-video">
 						<form method="POST" action="#">
@@ -146,7 +155,7 @@
 			</div>
 		</div>
 
-				
+			<!---PROYECTOS-->
 			<div class="proyectos">
 				<div class="text-project">	<h1 class="texto-servicios" style="color:black;">Proyectos</h1>Aqui te muestro mis trabajos realizados y por realizar.<br>
 				</div>
@@ -192,6 +201,7 @@
 						<div class="text-project">	<h1 class="texto-servicios" style="color:black;">Proceso de diseño web</h1>El proceso consta de sólo cuatro fases. Cuatro fases que considero son totalmente imprescindibles y necesarias para conseguir un resultado excelente.
 						</div>
 				</div>
+				<!--PROCESO DE PROYECTO-->
 			<div class="proceso-container margen-interno">
 				<div class="proceso-items">
 					<center><i class="fas fa-lightbulb"></i><h3>Planificacion</h3></center><br>
@@ -210,6 +220,7 @@
 					<p>Después del diseño y su posterior desarrollo, es hora de hacer el lanzamiento de la web para poder acabar de pulir algún pequeño detalle, testear y comprobar que todo funciona a la perfección. Y ya sólo nos quedaría brindar por un trabajo bien hecho y un mejor resultado...!</p>
 				</div>
 			</div>	
+			<!--FOOTER-->
 		<footer class="footer">
 			<div class="text-footer">
 				<p>¡Cuentame que idea tienes en mente, enviame tu correo y empezamos un nuevo proyecto!</p>
@@ -230,14 +241,14 @@
 			</div>
 			<div class="pie">
 				<hr>
-				<p>Desarrollado por Boris Lopez - CSS Flexbox Responsive</p>
+				Desarrollado por Boris Lopez - CSS Flexbox Responsive
 				
 			</div>
 			<div class="redes-footer">
-				<a href=""><i class="fab fa-facebook-square"></i></a>
-				<a href=""><i class="fab fa-twitter"></i></a>
-				<a href=""><i class="fab fa-instagram"></i></a>
-				<a href=""><i class="fas fa-at"></i></a>
+				<a href=""><i id="icon-fb" class="fab fa-facebook-square"></i></a>
+				<a href=""><i id="icon-twitter" class="fab fa-twitter"></i></a>
+				<a href=""><i id="icon-ig" class="fab fa-instagram"></i></a>
+				<a href=""><i id="icon-gmail" class="fas fa-at"></i></a>
 			</div>
 			
 		</footer>
